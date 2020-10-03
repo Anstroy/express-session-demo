@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Ninja | {{ title }}</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gray-300">
+    {{> nav}}
+    <div class="min-h-screen m-10 bg-gray-100 shadow-xl rounded p-10">
+        {{{ body }}}
+    </div>
+    <div class="bg-blue-300 text-center h-64">
+        {{> footer}}
+    </div>
+</body>
+
+</html>
